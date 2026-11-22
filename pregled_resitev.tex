@@ -1,0 +1,141 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[slovene]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+
+\title{\textbf{Pregled obstoječih rešitev} \\ \large Projekt: Spletna stran Pivovarne Laško}
+\author{Nikola Mršić, Jure Pintar, Ožbej \\ \small Skupina: Pivovarna Laško}
+\date{November 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Uvod}
+\label{sec:uvod}
+
+V okviru projektne naloge pri predmetu \emph{Komuniciranje in delo v skupinah} razvijamo sodobno, pregledno in odzivno predstavitveno spletno stran za podjetje \textbf{Pivovarna Laško}. Pivovarna Laško ima več kot 200-letno tradicijo varjenja piva od leta 1825, širok nabor alkoholnih in brezalkoholnih pijač ter bogato kulturno dediščino.
+
+Glavni problem, ki ga z našo rešitvijo naslavljamo, je združitev tradicionalne podobe blagovne znamke s sodobno in hitro uporabniško izkušnjo. Številne obstoječe pivovarske spletne strani so bodisi preobremenjene s težkimi animacijami, ki upočasnjujejo delovanje na mobilnih napravah, bodisi nimajo preglednega kataloga izdelkov in enostavnega obrazca za prijavo na vodene oglede pivovarne. Pred začetkom razvoja smo analizirali tri sorodne spletne rešitve s področja pivovarstva.
+
+\section{Analiza obstoječih rešitev}
+\label{sec:analiza}
+
+\subsection{Uradna spletna stran Pivovarne Laško}
+
+Uradna spletna stran Pivovarne Laško~\cite{lasko} predstavlja osrednjo digitalno točko blagovne znamke Laško v Sloveniji in tujini (slika~\ref{fig:lasko}). Namenjena je predstavitvi zgodovine pivovarne, portfelja izdelkov, trajnostnih pobud in aktualnih nagradnih iger.
+
+\begin{itemize}
+  \item \textbf{Ključne funkcionalnosti:}
+  \begin{itemize}
+    \item Preverjanje starosti obiskovalca (18+) ob prvem obisku strani.
+    \item Predstavitev posameznih vrst piva (Zlatorog, Dark, Club, Malt, Radler) s podatki o sestavinah in hranilnih vrednostih.
+    \item Interaktivni pregled zgodovine podjetja in novic o dogodkih (npr. festival Pivo in cvetje).
+  \end{itemize}
+  \item \textbf{Prednosti:} Močna celostna grafična podoba v prepoznavni temno zeleni in zlati barvi, bogata zgodovinska vsebina ter visoka kakovost fotografij izdelkov.
+  \item \textbf{Slabosti:} Zaradi velike količine slikovnih in video vsebin se stran na počasnejših povezavah nalaga počasneje, navigacija do rezervacijskega obrazca za ogled pivovarne pa zahteva več klikov.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resitev1_lasko.png}
+  \caption{Posnetek zaslona uradne spletne strani Pivovarne Laško~\cite{lasko}.}
+  \label{fig:lasko}
+\end{figure}
+
+\subsection{Spletna stran Heineken Slovenija}
+
+Spletna stran mednarodne pivovarne Heineken~\cite{heineken}, pod okrilje katere danes sodi tudi Pivovarna Laško Union, predstavlja globalno korporativno in produkto spletno rešitev (slika~\ref{fig:heineken}).
+
+\begin{itemize}
+  \item \textbf{Ključne funkcionalnosti:}
+  \begin{itemize}
+    \item Minimalističen katalog osrednjih izdelkov (Heineken Original, Heineken 0.0, Heineken Silver).
+    \item Predstavitev globalnih sponzorstev in kampanj za odgovorno pitje alkohola.
+    \item Večjezična podpora in preklop med regionalnimi spletnimi stranmi.
+  \end{itemize}
+  \item \textbf{Prednosti:} Izjemno sodoben in čist uporabniški vmesnik, jasna tipografija ter odlična prilagojenost mobilnim zaslonom.
+  \item \textbf{Slabosti:} Poudarek je predvsem na globalnem marketingu, medtem ko lokalnim obiskovalcem primanjkuje konkretnih informacij o lokalni pivovarni, vodenih ogledih in neposrednem kontaktnem obrazcu.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resitev2_heineken.png}
+  \caption{Posnetek zaslona spletne strani Heineken Slovenija~\cite{heineken}.}
+  \label{fig:heineken}
+\end{figure}
+
+\subsection{Spletna stran Pivovarne Pelicon}
+
+Pivovarna Pelicon~\cite{pelicon} iz Ajdovščine je ena najbolj prepoznavnih slovenskih butičnih (\emph{craft}) pivovarn. Njihova spletna stran združuje predstavitev pivovarne z neposredno spletno trgovino (slika~\ref{fig:pelicon}).
+
+\begin{itemize}
+  \item \textbf{Ključne funkcionalnosti:}
+  \begin{itemize}
+    \item Pregleden katalog rednih in sezonskih piv s filtriranjem po kategorijah.
+    \item Integrirana spletna košarica za neposreden nakup piva in darilnih paketov.
+    \item Podrobni tehnični opisi vsakega piva (stopnja alkohola ABV, grenkoba IBU, vrsta slada in hmelja).
+  \end{itemize}
+  \item \textbf{Prednosti:} Zelo hitro delovanje strani, takojšnja dostopnost vseh izdelkov že na vstopni strani in jasna struktura podatkov o posameznem pivu.
+  \item \textbf{Slabosti:} Manjši poudarek na zgodovinski zgodbi pivovarne in odsotnost posebnega obrazca za skupinske oglede ali degustacije.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resitev3_pelicon.png}
+  \caption{Posnetek zaslona spletne strani in kataloga Pivovarne Pelicon~\cite{pelicon}.}
+  \label{fig:pelicon}
+\end{figure}
+
+\section{Zaključek}
+\label{sec:zakljucek}
+
+Na podlagi opravljene analize treh obstoječih rešitev (primerjava v tabeli~\ref{tab:primerjava}) smo določili ključne smernice za razvoj naše spletne strani Pivovarne Laško:
+
+\begin{itemize}
+  \item \textbf{Kaj bomo prevzeli od obstoječih rešitev:}
+  \begin{itemize}
+    \item Od uradne strani Pivovarne Laško~\cite{lasko} bomo prevzeli tradicionalno barvno shemo (temno zelena, zlata in bela) ter bogato predstavitev zgodovinskih mejnikov od leta 1825.
+    \item Od rešitve Heineken~\cite{heineken} bomo prevzeli čist, pregleden in odziven izgled navigacijske vrstice ter poudarek na odgovornem uživanju alkohola.
+    \item Od strani Pivovarne Pelicon~\cite{pelicon} bomo prevzeli zasnovo preglednega kataloga izdelkov s karticami in hitrim filtriranjem po vrsti pijače.
+  \end{itemize}
+  \item \textbf{Kaj bo naša rešitev naredila drugače ali bolje:}
+  \begin{itemize}
+    \item Naša spletna stran bo zagotavljala bistveno hitrejše nalaganje in enostavnejšo navigacijo v največ treh glavnih korakih (Domov $\rightarrow$ Katalog piv $\rightarrow$ Kontakt in rezervacija ogleda).
+    \item Na podstrani za kontakt bomo vključili pregleden in neposreden obrazec za rezervacijo vodenega ogleda pivovarne in degustacije, ki ga obiskovalci pri obstoječih rešitvah pogosto težko najdejo.
+  \end{itemize}
+\end{itemize}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|c|c|c|c|}
+    \hline
+    \textbf{Funkcionalnost / Lastnost} & \textbf{Laško} & \textbf{Heineken} & \textbf{Pelicon} & \textbf{Naša rešitev} \\
+    \hline
+    Katalog pijač s filtriranjem & Delno & Ne & Da & \textbf{Da} \\
+    \hline
+    Zgodovinski časovni trak & Da & Ne & Ne & \textbf{Da} \\
+    \hline
+    Obrazec za rezervacijo ogleda & Skrito & Ne & Ne & \textbf{Da} \\
+    \hline
+    Hitro in lahko delovanje & Ne & Da & Da & \textbf{Da} \\
+    \hline
+  \end{tabular}
+  \caption{Primerjava funkcionalnosti obstoječih rešitev z našo načrtovano rešitvijo.}
+  \label{tab:primerjava}
+\end{table}
+
+\begin{thebibliography}{9}
+  \bibitem{lasko} Pivovarna Laško Union d.o.o., \emph{Uradna spletna stran Pivovarne Laško}, dostopno na: \url{https://www.lasko.eu/sl/} (ogled: november 2026).
+  \bibitem{heineken} Heineken N.V., \emph{Heineken Slovenija -- Uradna spletna stran}, dostopno na: \url{https://www.heineken.com/si/sl/domov} (ogled: november 2026).
+  \bibitem{pelicon} Pivovarna Pelicon d.o.o., \emph{Pivovarna Pelicon -- Slovenska craft pivovarna}, dostopno na: \url{https://www.pelicon.beer/} (ogled: november 2026).
+\end{thebibliography}
+
+\end{document}
